@@ -19,6 +19,8 @@ global.flag is an `array` used for pretty much anything that can happen. From de
 <details>
 <summary>All Flags in UNDERTALE</summary>
 
+The following data is sourced from [tomat.dev](https://tomat.dev/undertale/flags)
+
 | Flag     | Name                              | Type             | Comments                                                                                                                                                                                                                                                                                |
 |----------|-----------------------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1..3     | unused                            |                  |                                                                                                                                                                                                                                                                                         |
@@ -347,8 +349,6 @@ global.flag is an `array` used for pretty much anything that can happen. From de
 | 510      | plot_over                         | range            | <br>            2 if you complete the True Pacifist boss fight, 1 if you talk to Asriel in the ruins after the True Pacifist<br>            boss fight.<br>                                                                                                                             |
 | 511      | conversation_asriel2              | counter          | Progress through the conversation with Asriel in the ruins.                                                                                                                                                                                                                             |
 | 512      | choice_left_toriel                | bool             | Determines the type of the final scene in the bedroom.                                                                                                                                                                                                                                  |
-
-Data sourced from [tomat.dev](https://tomat.dev/undertale/flags)
 
 </details>
 
