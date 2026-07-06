@@ -10,7 +10,7 @@
     - [Global Variables](./UTDR/GlobalVars.md)
 - [UNDERTALE](./UNDERTALE/README.md)
     - [General](./DELTARUNE/general/README.md)
-      - [Battle Box](./DELTARUNE/general/battle_box.md)
+      - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
     - [Chapter 1](./DELTARUNE/chapter1/README.md)
     - [Chapter 2](./DELTARUNE/chapter2/README.md)
     - [Chapter 3](./DELTARUNE/chapter3/README.md)
