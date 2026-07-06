@@ -32,6 +32,12 @@ jobs:
       MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
+      - name: Cache and Install mdbook-callouts
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: mdbook-callouts
+          git: "https://github.com/ToolmanP/rs-mdbook-callouts"
+          commit: "83898e352a961fc65044e04c864141c8b5481722"
       - name: Install mdBook
         run: |
           curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -y | sh
@@ -46,12 +52,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./book
-      - name: Cache and Install mdbook-callouts
-        uses: baptiste0928/cargo-install@v3
-        with:
-          crate: mdbook-callouts
-          git: "https://github.com/ToolmanP/rs-mdbook-callouts"
-          commit: "83898e352a961fc65044e04c864141c8b5481722"
   # Deployment job
   deploy:
     environment:
