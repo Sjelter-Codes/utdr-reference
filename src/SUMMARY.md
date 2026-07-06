@@ -9,6 +9,7 @@
 - [Shared Code](./UTDR/README.md)
     - [Global Variables](./UTDR/GlobalVars.md)
 - [UNDERTALE](./UNDERTALE/README.md)
+- [DELTARUNE](./DELTARUNE/README.md)
     - [General](./DELTARUNE/general/README.md)
       - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
     - [Chapter 1](./DELTARUNE/chapter1/README.md)
