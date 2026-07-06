@@ -32,6 +32,10 @@ jobs:
       MDBOOK_VERSION: 0.4.36
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Create linked README
+        run: ln -s ../README.md src/README.md
+      
       - name: Cache and Install mdbook-callouts
         uses: baptiste0928/cargo-install@v3
         with:
@@ -45,7 +49,7 @@ jobs:
           mdbook-version: '0.4.10'
           # mdbook-version: 'latest'
       - run: mdbook build
-      
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
