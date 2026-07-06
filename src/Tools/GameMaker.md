@@ -26,8 +26,8 @@ Objects may or may not contain sprites and contain code. An object can have 7 di
 4. DRAW 
     It overrides the normal visual behavior of the object. Normally, it just checks if it's visible, and if it is, it draws its sprite at its position, every frame (the background is also redrawn, but you can get funny caterpillars if there's no background). 
     
-    [!CAUTION] 
-    Draw code still doesn't run if the object is not visible
+    > [!CAUTION] 
+    > Draw code still doesn't run if the object is not visible
 
 5. OTHER
 
