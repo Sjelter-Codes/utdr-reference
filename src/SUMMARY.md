@@ -11,10 +11,12 @@
 - [UNDERTALE](./UNDERTALE/README.md)
 - [DELTARUNE](./DELTARUNE/README.md)
     - [General](./DELTARUNE/general/README.md)
-      - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
+        - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
     - [Chapter 1](./DELTARUNE/chapter1/README.md)
     - [Chapter 2](./DELTARUNE/chapter2/README.md)
     - [Chapter 3](./DELTARUNE/chapter3/README.md)
     - [Chapter 4](./DELTARUNE/chapter4/README.md)
     - [Chapter 5](./DELTARUNE/chapter5/README.md)
+    - [Tutorials](./DELTARUNE/tutorials/README.md)
+        - [Replacing Localized Text](./DELTARUNE/tutorials/replacing_all_localized_text.md)
 

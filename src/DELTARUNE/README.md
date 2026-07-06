@@ -1,1 +1,1 @@
-# Deltarune
+# DELTARUNE
