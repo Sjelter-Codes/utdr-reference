@@ -47,7 +47,7 @@ jobs:
         with:
           path: ./book
       - name: Cache and Install mdbook-callouts
-        uses: jasonray/cache-cargo-install-action@v2
+        uses: baptiste0928/cargo-install@v3
         with:
           git: "https://github.com/ToolmanP/rs-mdbook-callouts"
           commit: "83898e352a961fc65044e04c864141c8b5481722"
