@@ -10,7 +10,7 @@ function scr_84_get_lang_string(arg0) {
 }
 ```
 
-In Chapter 2 onwards however the code has been changed
+In Chapter 2 onwards alongside removing the lang strings from being easily accessible the code to access them has been changed.
 
 ```js
 function scr_84_get_lang_string(arg0) {
