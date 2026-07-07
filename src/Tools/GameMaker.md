@@ -4,17 +4,22 @@
 
 This section is not meant to be a GameMaker tutorial, please refer to the [GameMaker Docs](https://manual.yoyogames.com/#t=Content.htm) if you are searching for in-depth help or specific functions. This section is simply meant to provide a quick albeit simple description of the elements of GameMaker you will most likely be interacting with.
 
-## What is GameMaker Studio?
-
-GameMaker Studio is the game engine that UNDERTALE and DELTARUNE use to make the game.
-
 ## Elements of a GameMaker Game
+---
+
+### Sprites
+
+Sprites[^1] are collections of images/textures, usually associated to an object. Sprites are usually prefixed with `spr`. The textures themselves are sourced from TexturePages.
+
+### Sounds
+
+Sounds[^2] are audio files, they are sometimes built into the game itself but other times can be found in either the game/chapter's folder or the /mus folder
 
 ### Objects
-Objects may or may not contain sprites and contain code. An object can have 7 different types of code.
+Objects[^3] may or may not contain sprites and contain code. Objects are usually prefixed with `obj`. An object can have 7 different types of code. 
 
 
-1. CREATEs
+1. CREATE
 
     It is run when the object is created, either by instance_create in some other code, or at the start of a room that contains the object.
 2. STEP
@@ -43,5 +48,21 @@ Objects may or may not contain sprites and contain code. An object can have 7 di
 
     It runs when the object collides with (touches; it won't necessarily stop motion) a specified object. You can set it to collide with a "parent" object, and assign that as the parent to other objects, and it will still count when it collides with the "children"
 
-### Sprites
+> 
 
+
+<div style="font-size: 0.66em;">
+
+> [!NOTE] Footnotes
+> [^1]: [Sprites GameMaker Page](https://manual.gamemaker.io/lts/en/GameMaker_Language/GML_Reference/Asset_Management/Sprites/Sprites.htm)
+> [^3]: [Objects GameMaker Page](https://manual.gamemaker.io/lts/en/GameMaker_Language/GML_Reference/Asset_Management/Objects/Objects.htm)
+
+</div>
+<div style="max-width: 300px; font-size: 0.66em;">
+
+> [!CAUTION] Depracation Warning
+> In modern GameMaker sound is depracated and as such the link page may contain functions which do not work when modding Undertale and Deltarune.
+>
+> Tread the page below with caution:
+> [^2]: [Sounds GameMaker Page](https://manual.gamemaker.io/lts/en/GameMaker_Language/GML_Reference/Asset_Management/Audio/Audio.htm)
+</div>
