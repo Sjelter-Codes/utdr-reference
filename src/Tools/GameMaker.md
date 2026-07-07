@@ -21,13 +21,12 @@ Objects may or may not contain sprites and contain code. An object can have 7 di
     It is run once a frame. It contains the bulk of what the object does.
 3. ALARM
 
-    It is run when that particular alarm reaches 0. Alarms are always counting down when they aren't being explicitly set. Set it to 30, it'll count down 29.. 28.. and run the code when it hits 0. To set an alarm you would use `alarm[x] = frames_to_count_down_for`. Be warned, there can only be 12 alarms inside of an object.
+    It is run when that particular alarm reaches 0. Alarms are always counting down when they aren't being explicitly set. Set it to 30, it'll count down 29.. 28.. and run the code when it hits 0. To set an alarm you would use `alarm[x] = frames_to_count_down_for`. 
+    > <i class="fa-solid fa-exclamation"></i> Caution: Be warned, there can only be 12 alarms inside of an object.
 
 4. DRAW 
     It overrides the normal visual behavior of the object. Normally, it just checks if it's visible, and if it is, it draws its sprite at its position, every frame (the background is also redrawn, but you can get funny caterpillars if there's no background). 
-
-    > [!CAUTION] 
-    > Draw code still doesn't run if the object is not visible
+    > <i class="fa-solid fa-exclamation"></i> Caution: Draw code still doesn't run if the object is not visible
 
 5. OTHER
 
