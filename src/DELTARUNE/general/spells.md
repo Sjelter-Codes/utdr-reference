@@ -17,16 +17,19 @@ Spells are casted either during battle or in the Power menu (This goes nearly co
 ## Spell Structure
 
 In DELTARUNE spells contain:
+
+View `gml_GlobalScript_scr_spellinfo` to compare
+
 - An ID
-    - This is used in the switch case statement inside of `scr_spell` to decide what code to run and is checked in `scr_spelltext` to decide which code to display. When it comes to items it appears that their IDs are offset by 200.
+    - This is used in the switch case statement inside of `scr_spell` to decide what code to run and is checked in `scr_spelltext` to decide which code to display upon use.
 - Spell Name
     - Known as `spellname`, this is the name that will show up in the Power Menu
 - Battle Alias
     - Known as `spellnameb`, this is the name that will show up during battle
 - Spell Description
-    - Known as `spelldesc`, this is the name that will show up in the Power Menu
+    - Known as `spelldesc`, this is the description that will show up in the Power Menu
 - Battle Description
-    - Known as `spelldescb`, this is the name that will show up during battle
+    - Known as `spelldescb`, this is the description that will show up during battle
 - Spell Target
     - Known as `spelltarget`, this is the target of the spell
         - 0 doesn't give a decision
@@ -61,7 +64,7 @@ Handles how spells are cast during battle.
 
 - arg0/spell is the ID of the spell to be cast
 - arg1/caster is the caster of the spell
-- star is the star of the attack
+- star is the star of the attack/the one who is targetted by the attack
 
 #### Example Usage
 
@@ -101,5 +104,5 @@ The recommended way to give a spell to a party member.
 #### Example Usage
 
 ```js
-    scr_spellget(4, 32)
+scr_spellget(4, 32)
 ```
