@@ -42,7 +42,7 @@ In DELTARUNE spells contain:
 ## Related Variables
 
 ### global.spell
-global.spell is a 2D array that stores the spell each party member currently has. The first value is the part member, the second is the ID for the spell in question.
+global.spell is a 2D array that stores the spell each party member currently has. The first value is the party member, the second is the ID for the spell in question.
 
 ```js
 global.spell[1][32]
