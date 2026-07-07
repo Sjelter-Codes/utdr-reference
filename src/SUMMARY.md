@@ -12,6 +12,7 @@
 - [DELTARUNE](./DELTARUNE/README.md)
     - [General](./DELTARUNE/general/README.md)
         - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
+        - [Spells](./DELTARUNE/general/spells.md)
     - [Chapter 1](./DELTARUNE/chapter1/README.md)
     - [Chapter 2](./DELTARUNE/chapter2/README.md)
     - [Chapter 3](./DELTARUNE/chapter3/README.md)
