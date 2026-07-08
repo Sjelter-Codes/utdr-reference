@@ -25,8 +25,11 @@ if (global.flag[23])
 The following data is sourced from [tomat.dev](https://tomat.dev/undertale/flags)
 
 Volatile values are flags that are changed often at runtime, so not easy to manually set. 
+
 Bool values are true/false conditions. 
+
 Range values can be any number. 
+
 Counter values increment as the condition is met.
 
 | Flag     | Name                              | Type             | Comments                                                                                                                                                                                                                                                                                |
