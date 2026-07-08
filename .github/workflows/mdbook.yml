@@ -43,6 +43,12 @@ jobs:
           git: "https://github.com/ToolmanP/rs-mdbook-callouts"
           commit: "83898e352a961fc65044e04c864141c8b5481722"
           
+      - name: Cache and Install mdbook-icons
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: mdbook-icons
+          git: "https://github.com/ld3z/mdbook-icons"
+          
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v2
         with:
