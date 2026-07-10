@@ -7,7 +7,8 @@
 ---
 
 - [Getting Started](./Tools/GettingStarted.md)
-    - [GameMaker Basics](./Tools/GameMaker.md)
+    - [GameMaker Basics](./Tools/GameMaker/README.md)
+        - [WAD Files](./Tools/GameMaker/WADFiles.md)
     - [UTMT](./Tools/UTMT/README.md)
     - [Sharing Mods](./Tools/SharingMods/README.md)
         - [Delta Patcher](./Tools/SharingMods/DeltaPatcher.md)
