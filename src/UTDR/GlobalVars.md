@@ -11,6 +11,19 @@ if (global.plot < 12)
 ## global.flag
 global.flag is an `array` used for pretty much anything that can happen. From decisions to storing specific values flags can be extremly diverse with their usage.
 
+### Example Usage
+
+```js
+if (global.flag[23])
+    global.flag[920]++
+```
+
+## global.interact
+Usage varies between games, please reference their specific articles as linked belowed
+
+[global.interact in Undertale](../DELTARUNE/general/GlobalVars.md)
+
+[global.interact in Deltarune](../UNDERTALE/GlobalVars.md)
 
 ### Example Usage
 
