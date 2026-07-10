@@ -21,7 +21,7 @@ Operating System | Default UNDERTALE WAD File Path
 --- | ---
 Windows | `C:\Program Files (x86)\Steam\steamapps\common\Undertale\data.win`
 Linux | `~/.local/share/Steam/steamapps/common/Undertale/assets/game.unx`
-macOS | `Library/Application Support/Steam/steamapps/common/Undertale/UNDERTALE.app/Contents/Resources/game.ios`
+macOS | `~/Library/Application Support/Steam/steamapps/common/Undertale/UNDERTALE.app/Contents/Resources/game.ios`
 
 ## DELTARUNE Demo
 
@@ -30,7 +30,7 @@ The WAD files for the DELTARUNE demo can be found in the following places if ins
 Operating System | Default DELTARUNE Demo WAD File Path
 --- | ---
 Windows | `C:\Program Files (x86)\Steam\steamapps\common\DELTARUNEdemo\data.win`
-macOS | `Library/Application Support/Steam/steamapps/common/DELTARUNEdemo/DELTARUNE.app/Contents/Resources/game.ios`
+macOS | `~/Library/Application Support/Steam/steamapps/common/DELTARUNEdemo/DELTARUNE.app/Contents/Resources/game.ios`
 
 ## DELTARUNE
 
@@ -39,7 +39,7 @@ Instead of having all of DELTARUNE's logic in one WAD file, the purchasable rele
 Operating System | Default DELTARUNE Chapter Select WAD File Path
 --- | ---
 Windows | `C:\Program Files (x86)\Steam\steamapps\common\DELTARUNE\data.win`
-macOS | `Library/Application Support/Steam/steamapps/common/DELTARUNE/DELTARUNE.app/Contents/Resources/game.ios`
+macOS | `~/Library/Application Support/Steam/steamapps/common/DELTARUNE/DELTARUNE.app/Contents/Resources/game.ios`
 
 The directory that has the Chapter Select WAD file also contains folders for each chapter, with each folder containing the WAD file for that chapter. The folders are named as follows, with `X` representing the chapter number:
 
