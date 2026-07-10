@@ -5,7 +5,10 @@
 # Reference Guide
 - [Getting Started](./Tools/GettingStarted.md)
     - [GameMaker Basics](./Tools/GameMaker.md)
-    - [UTMT](./Tools/UTMT.md)
+    - [UTMT](./Tools/UTMT/README.md)
+    - [Sharing Mods](./Tools/SharingMods/README.md)
+        - [Delta Patcher](./Tools/SharingMods/DeltaPatcher.md)
+        - [CSX Scripts](./Tools/SharingMods/CSX_Scripts.md)
 - [Shared Code](./UTDR/README.md)
     - [Global Variables](./UTDR/GlobalVars.md)
 - [UNDERTALE](./UNDERTALE/README.md)
