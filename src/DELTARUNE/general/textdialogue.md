@@ -1,0 +1,22 @@
+# Text & Dialogue
+
+## Control Characters
+
+Symbol | Description
+--- | ---
+`^[1-9]` | This is a control character that tells Deltarune to wait a certain amount of frames before continuing to write dialogue. <br> It is most commonly used right before commas and ellipses. <br> Each number corresponds to a different amount of frames. Deltarune runs at 30 frames per second. <br> `1`: 5 frames. <br>`2`: 10 frames. <br> `3`: 15 frames. <br> `4`: 20 frames. <br> `5`: 30 frames. <br> `6`: 40 frames. <br> `7`: 60 frames. <br> `8`: 90 frames. <br> `9`: 150 frames.
+`/` | This is a control character that tells Deltarune to stop writing dialogue for the current message. This doesn’t end the conversation, as pressing [CONFIRM] advances the text to the next message.
+`/%` | This is a control character that tells Deltarune to stop writing dialogue for the current message. After pressing [CONFIRM], the dialogue box goes away.
+`%%` | This is a control character that tells Deltarune to immediately close the dialogue box after it is reached.
+`\` | When using a control character with a backslash (\) in it, you must escape the backslash with another backslash. For example, `\\E1` is a valid control character that tells Deltarune to change the current character’s emotion to index 1.
+`\E[alphanumeric]` | This a control character that tells Deltarune to change the current face’s emotion. <br> <br> The number or letter after “E” tells Deltarune what emotion index to use. <br> `0-9` uses index 0-9. <br> `A-Z` uses indexes 10-35. <br> `a-z` uses indexes 36-60.
+`\F` | This a control character that tells Deltarune to change the current face. <br> The number or letter after “F” tells Deltarune what face to use. <br> `0`: No face. <br> `S`: Susie. <br> `R`: Ralsei. <br> `N`: Noelle. <br> `T`: Toriel <br> `L`: Lancer. <br> `A`: Asgore <br> `a`: Alphys <br> `B`: Berdly <br> `r`: Rudy <br> `u`: Rouxls Kaard <br> `K`: King
+`\T` | This a control character that tells Deltarune to change the typer, which controls how text is displayed and heard. <br> The number or letter after “T” tells Deltarune what typer to use. <br>`0`: Default <br>`1`: Silent in the Light World <br>`A`: Asgore <br>`a`: Alphys <br>`N`: Noelle <br>`n`: Noelle but with small text <br>`B`: Berdly <br>`S`: Susie <br>`R`: Ralsei <br>`L`: Lancer <br>`X`: Silent in the Dark World <br>`r`: Rudy <br>`T`: Toriel <br>`J`: Jevil <br>`K`: King
+`\f[0-9]` | This a control character that tells Deltarune to add a small face and text to the screen. 
+`\*` | This a control character that tells Deltarune to type a keyboard button or draw a controller button sprite. <br> This is only used when a controller is connected by calling scr_get_input_name(), where the first variable is a number from 0-9. <br>`0`: Move down <br>`1`: Move right <br>`2`: Move up <br>`3`: Move left <br>`4`: Confirm 1 (Defaults to Z) <br>`5`: Cancel 1 (Defaults to X) <br>`6`: Menu 1 (Defaults to C) <br>`7`: Confirm 2 (Defaults to Enter) <br>`8`: Cancel 2 (Defaults to Shift) <br>`9`: Menu 2 (Defaults to Control)
+`\s` | This a control character that tells Deltarune whether the text is skippable or not. <br>`0`: False <br>`1`: True
+`\c` | This a control character that tells Deltarune to color the following text a different color. <br> The letter or number after “c” controls what color to use.<br>`R`: Red <br>`B`: Blue <br>`Y`: Yellow <br>`G`: Lime <br>`W`: White <br>`X`: Black <br>`0`: Reset
+`\C` | This a control character that tells Deltarune to bring up a choicer. <br><br> The number after “C” tells Deltarune whether to use the old choicer, and how many choices there should be. <br>`1`: Old Choicer (How Undertale’s choicer looks) <br>`2`: New Choicer, 2 Choices <br>`3`: New Choicer: 3 Choices <br>`4`: New Choicer: 4 Choices
+`\M` | This a control character that tells Deltarune to change an overworld sprite using global.flag[20]. <br> The number after “M” tells Deltarune what to set the flag to.
+`\S` | This a control character that tells Deltarune to play a sound while text is writing. <br> The number after “S” tells Deltarune which predefined sound to play using global.writersnd[0-9].
+`\I` | This a control character that tells Deltarune to insert an image while text is writing. <br> The number after “I” tells Deltarune which predefined image to draw using global.writerimg[0-9].

@@ -19,10 +19,12 @@
 ---
 - [UNDERTALE](./UNDERTALE/README.md)
     - [Undertale's Global Variables](./UNDERTALE/GlobalVars.md)
+    - [Text & Dialogue](./UNDERTALE/textdialogue.md)
 ---
 - [DELTARUNE](./DELTARUNE/README.md)
     - [All Chapters](./DELTARUNE/general/README.md)
         - [Deltarune's Global Variables](./DELTARUNE/general/GlobalVars.md)
+        - [Text & Dialogue](./DELTARUNE/general/textdialogue.md)
         - [Battle Box and SOUL Modes](./DELTARUNE/general/battle_box_and_soul.md)
         - [Items](./DELTARUNE/general/items.md)
         - [Spells](./DELTARUNE/general/spells.md)
