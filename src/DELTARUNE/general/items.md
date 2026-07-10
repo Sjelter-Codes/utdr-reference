@@ -30,7 +30,7 @@ View `gml_GlobalScript_scr_iteminfo` to compare
     - Known as `itemdesc[id] in scr_itemdesc()`, this is the description that will show up in the the overworld.
 - Battle Description
     - Known as `itemdescb`, this is the name that will show up during battle
-- item Target
+- Item Target
     - Known as `target`, this is the target of the item
         - 0 doesn't give a decision
         - 1 selects an ally
