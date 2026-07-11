@@ -29,3 +29,22 @@ function scr_84_get_lang_string(arg0) {
     return str;
 }
 ```
+On top of that this script only runs if `is_english()` is false. 
+
+---
+
+Instead of trying to use `scr_84_get_lang_string()` try using `msgsetloc()` as shown below
+
+```js
+function c_msgsetloc(arg0, arg1, arg2)
+{
+    var msg_index = arg0;
+    var english = arg1;
+    var localized_string_id = arg2;
+    var str = english;
+    if (!is_english())
+        str = scr_84_get_lang_string(localized_string_id);
+    // do stuff with `str`
+    c_msgset(msg_index, str);
+}
+```
