@@ -13,14 +13,20 @@
     - [Sharing Mods](./Tools/SharingMods/README.md)
         - [Delta Patcher](./Tools/SharingMods/DeltaPatcher.md)
         - [CSX Scripts](./Tools/SharingMods/CSX_Scripts.md)
+
 ---
+
 - [Shared Code](./UTDR/README.md)
     - [Global Variables](./UTDR/GlobalVars.md)
+
 ---
+
 - [UNDERTALE](./UNDERTALE/README.md)
     - [Undertale's Global Variables](./UNDERTALE/GlobalVars.md)
     - [Text & Dialogue](./UNDERTALE/textdialogue.md)
+
 ---
+
 - [DELTARUNE](./DELTARUNE/README.md)
     - [All Chapters](./DELTARUNE/general/README.md)
         - [Deltarune's Global Variables](./DELTARUNE/general/GlobalVars.md)
