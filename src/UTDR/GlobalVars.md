@@ -8875,9 +8875,10 @@ Map values map to certain specific values as outlined in their description.
 ## global.interact
 Usage varies between games but generally is used to determine player state, please reference their specific articles as linked belowed
 
-[global.interact in UNDERTALE](../DELTARUNE/general/GlobalVars.md)
+[global.interact in UNDERTALE](../DELTARUNE/general/GlobalVars.md#globalinteract)
 
-[global.interact in DELTARUNE](../UNDERTALE/GlobalVars.md)
+[global.interact in DELTARUNE](../UNDERTALE/GlobalVars.md#globalinteract)
+
 
 ### Example Usage
 
