@@ -1,12 +1,13 @@
 # Text & Dialogue
 
-## Lang Files
+## Localization
+### Lang Files
 
 All of DELTARUNE Chapter 1's dialogue is stored in the Chapter 1 `lang` folder, which is located in the same directory as where the [Chapter 1 WAD file resides](../../Tools/GameMaker/WADFiles.md#deltarune). The English and Japanese translations are named `lang_en.json` and `lang_ja.json` respectively. 
 
 The beginning of Chapter 1's `lang_en.json` is shown below:
 
-```js
+```json
 {
   "date": "1540902565549",
   "DEVICE_CONTACT_slash_Step_0_gml_5_0": " ^9 ^8 %",
@@ -19,6 +20,29 @@ The beginning of Chapter 1's `lang_en.json` is shown below:
 Each JSON file contains a `date` key whose value is a timestamp encoded in unix time. Each subsequent key is a dialogue ID (e.g. `DEVICE_CONTACT_slash_Step_0_gml_5_0`) with the appropriate translation as the corresponding value. The dialogue IDs are the same between the English and Japanese JSONs, making it easy for the game to find the correct text translation just from the text's dialogue ID.
 
 Starting from Chapter 2, DELTARUNE's English dialogue no longer exists in a `lang_en.json` file but is instead embedded in the code of the WAD file. However, Japanese dialogue still remains in a `lang_ja.json` file.  
+
+### 8-4 Localization Scripts
+
+The `scr_84` scripts, likely named after DELTARUNE's localization company "8-4", handle DELTARUNE's localization system. When DELTARUNE's initializer object, `obj_initializer2`, is created, it calls the localization initialization script, `scr_84_init_localization`, in its Create event.
+
+In essence, this script initializes some important global variables:
+
+Variable Name | Type | Notes
+--- | --- | ---
+`global.lang` | `string` | <ul><li>Can either be `en` or `ja`.</li><li>First tries to read the value from the `LANG` key in the `LANG` header of `true_config.ini`</li><li>Otherwise, the variable is set via the builtin GameMaker function `os_get_language`.</li><li>Determines whether the other global variables, besides `global.lang_map` post-Chapter 1, load the English or Japanese translation.</li></ul>
+`global.lang_map` | `DS Map` | <ul><li>A DS map containing all of DELTARUNE's Japanese dialogue.</li><li>`scr_84_init_localization` calls `scr_84_lang_load`, which loads this variable by reading the `lang_ja.json` file through the wrapper script `scr_84_load_map_json`.</li><li>In Chapter 1, this variable may also hold the contents of `lang_en.json` if the language is set to English.</li></ul>
+`global.font_map` | `DS Map` | <ul><li>A DS map that contains either English or Japanese fonts based on the current language.</li><li>The font IDs are the font names without the `fnt_` or `fnt_ja_` prefix.</li><li>Example: Font ID `main` is mapped to `fnt_main` in English and to `fnt_ja_main` in Japanese.</li></ul>
+`global.chemg_sprite_map`<br>`global.chemg_sound_map`| `DS Map` | <ul><li>DS maps that contain either English or Japanese assets based on the current language.</li><li>The asset IDs are the English asset names.</li><li>Example: In `global.chemg_sound_map`, sound ID `snd_flowery_voiceclip_glue` is mapped to `snd_flowery_voiceclip_glue` in English and `snd_flowery_voiceclip_glue_ja` in Japanese.</li></ul>
+
+The following wrapper scripts are used throughout the game's code to access these global variables:
+
+Script Name | Usage Notes
+--- | ---
+`scr_84_get_font`| <ul><li>Takes a font ID and returns the corresponding font found in `global.font_map`</li><li>Example: `f = scr_84_get_font("mainbig");`</li></ul>
+`scr_84_set_draw_font` | <ul><li>Takes a font ID and sets the current draw font to the corresponding font in `global.font_map`</li><li>Example: `scr_84_set_draw_font("dotumche");`</li></ul>
+`scr_84_get_lang_string` | <ul><li>Takes a dialogue ID and returns the corresponding dialogue string in `global.lang_map`</li><li>Example: `s = scr_84_get_lang_string("scr_text_slash_scr_text_gml_2198_0");`</li></ul>
+`scr_84_get_sprite` | <ul><li>Takes a sprite ID and returns the corresponding sprite found in `global.chemg_sprite_map`</li><li>Example: `menu_sprite = scr_84_get_sprite("spr_darkmenudesc");`</li></ul>
+`scr_84_get_sound` | <ul><li>Takes a sound ID and returns the corresponding sound found in `global.chemg_sound_map`</li><li>Example: `snd_stop(scr_84_get_sound("snd_ja_kidding"));`</li><ul>
 
 ## Control Characters
 
