@@ -6,9 +6,9 @@ Caterpillars (obj_caterpillarchara) in Deltarune are characters who follow you i
 
 # obj_caterpillarchara
 
-`obj_caterpillarchata attributes` | Value
+Attributes | Value
 --- | ---
-`.name' | Name of the character 
+`.name` | Name of the character 
 
 
 
