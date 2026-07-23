@@ -44,5 +44,5 @@
     - [Tutorials](./DELTARUNE/tutorials/README.md)
         - [General](./DELTARUNE/tutorials/README.md)
             - [Replacing Localized Text](./DELTARUNE/tutorials/replacing_all_localized_text.md)
-
+            - [Creating Custom Rooms](./DELTARUNE/tutorials/custom_rooms.md)
 ---
